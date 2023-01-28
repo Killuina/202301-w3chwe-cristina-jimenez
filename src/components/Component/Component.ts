@@ -10,6 +10,7 @@ class Component implements ComponentStructure {
   ) {
     this.domElement = document.createElement(tag);
     this.domElement.className = className;
+    this.render();
   }
 
   render(): void {
