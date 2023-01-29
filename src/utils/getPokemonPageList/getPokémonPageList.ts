@@ -9,6 +9,5 @@ export const getPokemonPageList = async (
 ): Promise<PageResponseStructure> => {
   const response = await fetch(url);
   const pokemonPageList = (await response.json()) as PageResponseStructure;
-
   return pokemonPageList;
 };

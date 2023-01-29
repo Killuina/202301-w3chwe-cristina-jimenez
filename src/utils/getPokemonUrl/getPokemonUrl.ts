@@ -7,6 +7,5 @@ export const getPokemonUrl = async (
   const pokemonUrl: string = (await getPokemonPageList(pageList)).results[
     pokemonIndex
   ].url;
-
   return pokemonUrl;
 };
