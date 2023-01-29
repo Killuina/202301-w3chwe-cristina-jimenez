@@ -13,7 +13,7 @@ class CardComponent extends Component {
     super.render();
     this.element.innerHTML = `
     <span>${this.pokemonInfo.name}</span>
-    <img src=${this.pokemonInfo.sprites.versions["generation-v"]["black-white"].animated.front_default}>`;
+    <img src=${this.pokemonInfo.sprites.versions["generation-v"]["black-white"].animated.front_default} alt="${this.pokemonInfo.name} animated sprite">`;
   }
 }
 
