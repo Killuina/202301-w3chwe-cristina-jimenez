@@ -2,7 +2,7 @@ import Component from "../Component/Component.js";
 
 class HeaderComponent extends Component {
   headerImg: string;
-  constructor(parentElement: HTMLElement, imgUrl: string) {
+  constructor(parentElement: Element, imgUrl: string) {
     super(parentElement, "main-header", "header");
     this.headerImg = imgUrl;
     this.render();
@@ -10,7 +10,7 @@ class HeaderComponent extends Component {
 
   render(): void {
     super.render();
-    this.domElement.innerHTML = `<img src="${this.headerImg}">`;
+    this.element.innerHTML = `<img src=${this.headerImg}>`;
   }
 }
 
