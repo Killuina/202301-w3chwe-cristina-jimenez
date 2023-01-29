@@ -10,7 +10,7 @@ class HeaderComponent extends Component {
 
   render(): void {
     super.render();
-    this.element.innerHTML = `<img src=${this.headerImg}>`;
+    this.element.innerHTML = `<img src=${this.headerImg} alt="Pokédex logo">`;
   }
 }
 

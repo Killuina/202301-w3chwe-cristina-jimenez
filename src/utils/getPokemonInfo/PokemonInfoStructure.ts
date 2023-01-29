@@ -5,10 +5,12 @@ interface PokemonInfoStructure {
       "generation-v": {
         "black-white": {
           animated: {
-            "front-default": string;
+            front_default: string;
           };
         };
       };
     };
   };
 }
+
+export default PokemonInfoStructure;
