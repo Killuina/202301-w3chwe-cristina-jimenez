@@ -1,12 +1,10 @@
-import { getPokemonPageList } from "../getPokemonPageList/getPokémonPageList.js";
+export const getPokemonInfo = async (
+  pokemonUrl: string
+): Promise<PokemonInfoStructure> => {
+  const pokemonInfoResponse = await fetch(pokemonUrl);
 
-export const getPokemonUrl = async (
-  pageList: string,
-  pokemonIndex: number
-): Promise<string> => {
-  const pokemonUrl: string = (await getPokemonPageList(pageList)).results[
-    pokemonIndex
-  ].url;
+  const pokemonInfo =
+    (await pokemonInfoResponse.json()) as PokemonInfoStructure;
 
-  return pokemonUrl;
+  return pokemonInfo;
 };
